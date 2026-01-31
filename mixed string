@@ -1,0 +1,15 @@
+create a mixed string by using the following rules.given two strings s1,s2.write s program to create a new string s3 made of first char of s1,then the last char of s2,nest,the second char of s3 and second last char of s2,and so on.any leftover char go at the end of the reult
+s1 = input()
+s2 = input()
+len_s1 = len(s1)
+len_s2 = len(s2)
+length = max(len_s1,len_s2)
+s2=s2[::-1]
+s3=""
+for i in range(length):
+  if (i<len_s1):
+    s3=s3+s1[i]
+  if (i<len_s2):
+    s3=s3+s2[i]
+print(s3)
+   
